@@ -1,9 +1,9 @@
 import FindSpectra as fSpec
 import FindDissonanceCurves as FDC
 
-xyz = fSpec.findSpectra()
+# xyz = fSpec.findSpectra()
 
-abc = FDC.findCurves()
+# abc = FDC.findCurves()
 
 def doOne(fileName):
     freqs, amps = fSpec.findOneSpectrum(fileName)
@@ -11,5 +11,5 @@ def doOne(fileName):
     #     freqs[i] = (i+1)*440
     FDC.findOneCurve(freqs, amps, fileName)
 
-# a = doOne('Alto Sax_01.wav')
+a = doOne('Banjo_01-03.wav')
 

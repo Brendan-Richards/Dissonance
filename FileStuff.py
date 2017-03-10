@@ -3,7 +3,7 @@ from scipy.io import wavfile as wav
 import math
 from scipy.fftpack import fft, fftfreq
 
-myPath = "C:/Users/Brendan/Dropbox/Python projects/dissonance/"
+myPath = "C:/Users/Brendan/Dropbox/github/Dissonance/"
 
 def saveSpectra(peakFreqs, peakAmps, filename1, filename2):
     myFile1 = open(myPath + filename1 + ".csv", 'w')

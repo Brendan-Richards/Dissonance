@@ -138,19 +138,32 @@ def findPeaksAlternate(freqs, amps, cutoff, ignore):
                 start = j
         elif temp[j] == 0 and start is not None:
             if zeroCount >= maxZeros:
-                end = j
+                end = j-zeroCount
                 peakWidth = freqs[end] - freqs[start]
                 print("width of peak: " + str(peakWidth))
                 if freqs[start] > ignore:
                     guy = amps[start:end]
                     guy2 = freqs[start:end]
+
+                    # myFile2 = open("C:/Users/Brendan/Desktop/440amps.csv", 'w')
+                    # for x in guy:
+                    #     myFile2.write(str(x) + ',\n')
+                    # myFile2.close()
+                    #
+                    # myFile2 = open("C:/Users/Brendan/Desktop/440freqs.csv", 'w')
+                    # for x in guy2:
+                    #     myFile2.write(str(x) + ',\n')
+                    # myFile2.close()
+                    #
+                    # break
+
                     maxAmp = max(amps[start:end])
                     maxFreqInd = amps[start:end].index(maxAmp) + start
                     maxFreq = freqs[maxFreqInd]
                     peakFreqs.append(maxFreq)
                     peakAmps.append(maxAmp)
-                    end = None
-                    start = None
+                end = None
+                start = None
             else:
                 zeroCount += 1
 
@@ -160,7 +173,7 @@ def findPeaksAlternate(freqs, amps, cutoff, ignore):
 def findOneSpectrum(fileName):
     freqs, amps = fs.getAmpsAndFreqs(fileName)
 
-    cutoff = .2
+    cutoff = .1
     ignore = 400
 
     # make spectrum plot
