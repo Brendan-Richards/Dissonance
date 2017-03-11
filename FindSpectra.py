@@ -1,5 +1,6 @@
 import FileStuff as fs
 import matplotlib.pyplot as plt
+import detect_peaks as dp
 
 
 def findSpectra():
@@ -9,6 +10,7 @@ def findSpectra():
 
     for i in range(len(wavFiles)):
         freqs, amps = fs.getAmpsAndFreqs(wavFiles[i])
+        fs.saveData(freqs, amps, wavFiles[i])
 
         # make spectrum plot
         peakFreqs, peakAmps = plotMaxima(freqs, amps, wavFiles[i], cutoff, ignore, False)
@@ -129,9 +131,9 @@ def findPeaksAlternate(freqs, amps, cutoff, ignore):
     start = None
 
     for j in range(len(freqs)):
-        global zeroCount
-        global start
-        global end
+        # global zeroCount
+        # global start
+        # global end
         if temp[j] > 0:
             zeroCount = 0
             if start is None:
@@ -172,9 +174,10 @@ def findPeaksAlternate(freqs, amps, cutoff, ignore):
 
 def findOneSpectrum(fileName):
     freqs, amps = fs.getAmpsAndFreqs(fileName)
+    fs.saveData(freqs, amps, fileName)
 
     cutoff = .1
-    ignore = 400
+    ignore = 3000
 
     # make spectrum plot
     peakFreqs, peakAmps = plotMaxima(freqs, amps, fileName, cutoff, ignore, False)

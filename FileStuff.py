@@ -5,6 +5,17 @@ from scipy.fftpack import fft, fftfreq
 
 myPath = "C:/Users/Brendan/Dropbox/github/Dissonance/"
 
+def saveData(freqs, amps, filename):
+    myFile1 = open(myPath + "spectrum_plot_data/" + filename[:len(filename)-4] + "_freqs.csv", 'w')
+    for x in freqs:
+        myFile1.write(str(x) + ',\n')
+    myFile1.close()
+
+    myFile2 = open(myPath + "spectrum_plot_data/" + filename[:len(filename)-4] + "_amps.csv", 'w')
+    for x in amps:
+        myFile2.write(str(x) + ',\n')
+    myFile2.close()
+
 def saveSpectra(peakFreqs, peakAmps, filename1, filename2):
     myFile1 = open(myPath + filename1 + ".csv", 'w')
     for x in peakFreqs:
@@ -57,3 +68,12 @@ def powOf2(data):
 # return a list of all the filenames in the given folder
 def getWavFiles():
     return os.listdir(myPath + "Instrument_samples/")  # get a list of all the filenames of the audio files
+
+def getSmoothed(fileName):
+    temp = []
+    myFile1 = open(myPath + '/smoothed_data/' + fileName, 'r')
+    for x in myFile1:
+        temp.append(float(x))
+    myFile1.close()
+
+    return temp
