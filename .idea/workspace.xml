@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8313e11-bd27-424d-8872-74a548f331d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Accordion_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Accordion_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Alto Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Alto Sax_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Banjo_01-03.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Banjo_01-03.png" />
+    <list default="true" id="e8313e11-bd27-424d-8872-74a548f331d0" name="Default" comment="implemented new peak detection algorithm, and made gui">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindSpectra.py" afterPath="$PROJECT_DIR$/FindSpectra.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detect_peaks.py" afterPath="$PROJECT_DIR$/detect_peaks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Accordion_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Accordion_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Alto Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Alto Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Accordion_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Accordion_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Alto Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Alto Sax_01.csv" />
     </list>
     <ignored path="dissonance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -450,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489272985564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented new peak detection algorithm, and made gui">
+      <created>1489291180886</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1489291180886</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -468,8 +465,8 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558442" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558442" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558442" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558442" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -535,7 +532,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new peak detect algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="new peak detect algorithm" />
+    <MESSAGE value="implemented new peak detection algorithm, and made gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented new peak detection algorithm, and made gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
