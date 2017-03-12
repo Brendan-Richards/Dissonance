@@ -4,7 +4,7 @@ import FileStuff as fs
 import matplotlib.pyplot as plt
 import detect_peaks as dp
 
-# xyz = fSpec.findSpectra()
+xyz = fSpec.findSpectra()
 
 # abc = FDC.findCurves()
 
@@ -18,16 +18,10 @@ def doOne(fileName):
 
 def testSmoothing():
     freqs, amps = fs.getAmpsAndFreqs('Piano Mono_01.wav')
-    #amps = fs.getSmoothed('smoothed_data_harpsichord2')
-    maxima = dp.detect_peaks(amps, mph=0.05, mpd=7000, show=True, valley=False)
-    for i in range(len(maxima)):
-        if freqs[maxima[i]] > 10000:
-            maxima = maxima[:i]
-            break
-    for i in range(len(maxima)):
-        if freqs[maxima[i]] > 400:
-            maxima = maxima[i:]
-            break
+    # amps = fs.getSmoothed('smoothed_data_harpsichord2')
+    low = 9900
+    high = 240000
+    maxima = dp.detect_peaks(amps, mph=0.05, mpd=7000, show=False, valley=False, low=low, high=high)
     peakAmps = []
     peakFreqs = []
     for x in maxima:
@@ -42,4 +36,4 @@ def testSmoothing():
     FDC.findOneCurve(peakFreqs, peakAmps, 'Piano Mono_01.wav')
 
 
-testSmoothing()
+# testSmoothing()

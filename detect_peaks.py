@@ -9,7 +9,7 @@ import numpy as np
 
 
 def detect_peaks(x, mph=None, mpd=1, threshold=0, edge='rising',
-                 kpsh=False, valley=False, show=False, ax=None):
+                 kpsh=False, valley=False, show=False, ax=None, cutoff=.2, low=1, high=50000):
     """Detect peaks in data based on their amplitude and other features.
 
     Parameters
@@ -35,6 +35,13 @@ def detect_peaks(x, mph=None, mpd=1, threshold=0, edge='rising',
     show : bool, optional (default = False)
         if True (1), plot data in matplotlib figure.
     ax : a matplotlib.axes.Axes instance, optional (default = None).
+    low : int, optional (default = 1)
+        gives the lower limit for detected peak indicies
+    high : int, optional (default = 50000)
+        gives the upper limit for detected peak indicies
+    cutoff : float, optional (default = .2)
+        dont find any peaks for amplitudes below this value
+
 
     Returns
     -------
@@ -106,6 +113,11 @@ def detect_peaks(x, mph=None, mpd=1, threshold=0, edge='rising',
         # remove the small peaks and sort back the indices by their occurrence
         ind = np.sort(ind[~idel])
 
+    temp = []
+    for i in range(ind.size):
+        if ind[i] > low and ind[i] < high and x[ind[i]] > cutoff:
+            temp.append(ind[i])
+
     if show:
         if indnan.size:
             x[indnan] = np.nan
@@ -113,7 +125,7 @@ def detect_peaks(x, mph=None, mpd=1, threshold=0, edge='rising',
             x = -x
         _plot(x, mph, mpd, threshold, edge, valley, ax, ind)
 
-    return ind
+    return temp
 
 
 def _plot(x, mph, mpd, threshold, edge, valley, ax, ind):
