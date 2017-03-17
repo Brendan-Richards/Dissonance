@@ -4,9 +4,9 @@ import FileStuff as fs
 import matplotlib.pyplot as plt
 import detect_peaks as dp
 
-xyz = fSpec.findSpectra()
+# xyz = fSpec.findSpectra()
 
-# abc = FDC.findCurves()
+abc = FDC.findCurves()
 
 def doOne(fileName):
     freqs, amps = fSpec.findOneSpectrum(fileName)
