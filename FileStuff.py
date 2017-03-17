@@ -3,7 +3,7 @@ from scipy.io import wavfile as wav
 import math
 from scipy.fftpack import fft, fftfreq
 
-myPath = "C:/Users/Brendan/Dropbox/github/Dissonance/"
+myPath = "C:/Users/Brend/Dropbox/github/Dissonance/"
 
 def saveData(freqs, amps, filename):
     myFile1 = open(myPath + "spectrum_plot_data/" + filename[:len(filename)-4] + "_freqs.csv", 'w')

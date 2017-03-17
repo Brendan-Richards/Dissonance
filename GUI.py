@@ -58,8 +58,3 @@ def guiInit(vals):
     e5.insert(END, str(vals[4]))
 
     mainloop()
-
-# asdf = [.1, .05, 10000, 400, 1000, False]
-# print(asdf)
-# guiInit(asdf)
-# print(asdf)

@@ -4,14 +4,12 @@ import FileStuff as fs
 import matplotlib.pyplot as plt
 import detect_peaks as dp
 
-# xyz = fSpec.findSpectra()
+xyz = fSpec.findSpectra()
 
 abc = FDC.findCurves()
 
 def doOne(fileName):
     freqs, amps = fSpec.findOneSpectrum(fileName)
-    # for i in range(len(freqs)):
-    #     freqs[i] = (i+1)*440
     FDC.findOneCurve(freqs, amps, fileName)
 
 # a = doOne('Harpsichord_01.wav')
