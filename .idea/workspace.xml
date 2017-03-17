@@ -2,17 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8313e11-bd27-424d-8872-74a548f331d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dissonance_curves/440 tone.png" afterPath="$PROJECT_DIR$/dissonance_curves/440 tone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dissonance_curves/Accordion_01.png" afterPath="$PROJECT_DIR$/dissonance_curves/Accordion_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dissonance.iml" afterPath="$PROJECT_DIR$/.idea/dissonance.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/440 tone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Accordion_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Alto Sax_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Banjo_01-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Bassoon_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Clarinet_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Flute_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/French Horn_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Harpsichord_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Mandolin_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Nylon Guitar_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Oboe_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Piano Mono_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Soprano Sax_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Steel String Guitar_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Tenor Sax_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Trombone_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Trumpet Cup Mute_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Trumpet_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Vibes_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Violin_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/cello_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/harp_01.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileStuff.py" afterPath="$PROJECT_DIR$/FileStuff.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDissonanceCurves.py" afterPath="$PROJECT_DIR$/FindDissonanceCurves.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindSpectra.py" afterPath="$PROJECT_DIR$/FindSpectra.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI.py" afterPath="$PROJECT_DIR$/GUI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathematica_files/data_smoothing.nb" afterPath="$PROJECT_DIR$/mathematica_files/data_smoothing.nb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathematica_files/freq_spec_values.nb" afterPath="$PROJECT_DIR$/mathematica_files/freq_spec_values.nb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Accordion_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Accordion_01.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Alto Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Alto Sax_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Banjo_01-03.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Banjo_01-03.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Bassoon_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Bassoon_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Clarinet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Clarinet_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Flute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Flute_02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_French Horn_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_French Horn_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Harpsichord_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Harpsichord_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Mandolin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Mandolin_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Nylon Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Nylon Guitar_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Oboe_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Oboe_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Piano Mono_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Piano Mono_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Soprano Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Soprano Sax_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Steel String Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Steel String Guitar_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Tenor Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Tenor Sax_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Trombone_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Trombone_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Trumpet Cup Mute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Trumpet Cup Mute_02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Trumpet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Trumpet_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Violin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Violin_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_cello_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_cello_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_harp_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_harp_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Accordion_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Accordion_01.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Alto Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Alto Sax_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Banjo_01-03.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Banjo_01-03.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Bassoon_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Bassoon_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Clarinet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Clarinet_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Flute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Flute_02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_French Horn_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_French Horn_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Harpsichord_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Harpsichord_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Mandolin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Mandolin_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Nylon Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Nylon Guitar_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Oboe_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Oboe_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Piano Mono_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Piano Mono_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Soprano Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Soprano Sax_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Steel String Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Steel String Guitar_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Tenor Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Tenor Sax_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Trombone_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Trombone_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Trumpet Cup Mute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Trumpet Cup Mute_02.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Trumpet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Trumpet_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Violin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Violin_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_cello_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_cello_01.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_harp_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_harp_01.csv" />
     </list>
     <ignored path="dissonance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,9 +96,11 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="594">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,11 +108,9 @@
       <file leaf-file-name="FindSpectra.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindSpectra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1496">
+              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,7 +118,7 @@
       <file leaf-file-name="GUI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
+            <state relative-caret-position="858">
               <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
@@ -67,8 +128,8 @@
       <file leaf-file-name="FindDissonanceCurves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="674">
+              <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -77,8 +138,8 @@
       <file leaf-file-name="FileStuff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileStuff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="444">
+              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -89,7 +150,7 @@
       <file leaf-file-name="detect_peaks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/detect_peaks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="418">
               <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding />
             </state>
@@ -115,19 +176,20 @@
         <option value="$PROJECT_DIR$/DissonanceCurves.py" />
         <option value="$PROJECT_DIR$/DissonanceCurve.py" />
         <option value="$PROJECT_DIR$/Dissonance.py" />
-        <option value="$PROJECT_DIR$/FindDissonanceCurves.py" />
         <option value="$PROJECT_DIR$/detect_peaks.py" />
+        <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/FileStuff.py" />
+        <option value="$PROJECT_DIR$/FindDissonanceCurves.py" />
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/FindSpectra.py" />
-        <option value="$PROJECT_DIR$/GUI.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -483,19 +545,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1038" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24869384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27524972" sideWeight="0.08098224" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27222833" sideWeight="0.084375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16558442" sideWeight="0.49367756" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27524972" sideWeight="0.9190178" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27222833" sideWeight="0.915625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16450216" sideWeight="0.72602737" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44839066" sideWeight="0.723093" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -567,17 +629,12 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FindSpectra.py</url>
-          <line>160</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FindSpectra.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="64" />
+          <url>file://$PROJECT_DIR$/FileStuff.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="65" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -586,7 +643,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -594,9 +653,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="43" column="6" selection-start-line="42" selection-start-column="0" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -623,7 +680,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -631,9 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +709,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,7 +720,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,9 +730,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +757,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,9 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -779,24 +838,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
+        <state relative-caret-position="858">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FileStuff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="444">
+          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -805,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/detect_peaks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="418">
           <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
           <folding />
         </state>
@@ -813,19 +864,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FindSpectra.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1496">
+          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="594">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

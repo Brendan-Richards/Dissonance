@@ -77,3 +77,18 @@ def getSmoothed(fileName):
     myFile1.close()
 
     return temp
+
+
+def saveDissonanceVals(yVals, fileName):
+    myFile1 = open(myPath + 'dissonance_curve_data/' + 'dissonance_curve_data_for_' + fileName + ".csv", 'w')
+    for x in yVals:
+        myFile1.write(str(x) + ",\n")
+    myFile1.close()
+
+def getDissonanceVals(fileName):
+    temp = []
+    myFile1 = open(myPath + 'dissonance_curve_data/' + 'dissonance_curve_data_for_' + fileName + ".csv", 'r')
+    for x in myFile1:
+        temp.append(float(x[:-3]))
+    myFile1.close()
+    return temp

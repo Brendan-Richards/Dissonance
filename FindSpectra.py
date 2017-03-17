@@ -32,7 +32,7 @@ def findSpectra():
             g.guiInit(params)
             if params[5]:
                 params[5] = False
-                #fs.saveSpectra(peakFreqs, peakAmps, "partials/peak_freqs_" + wavFiles[i][:len(wavFiles[i]) - 4], "partials/peak_amps_" + wavFiles[i][:len(wavFiles[i]) - 4])
+                fs.saveSpectra(peakFreqs, peakAmps, "partials/peak_freqs_" + wavFiles[i][:len(wavFiles[i]) - 4], "partials/peak_amps_" + wavFiles[i][:len(wavFiles[i]) - 4])
                 break
 
 
@@ -68,7 +68,7 @@ def plotMaxima(freqs, amps, filename, params):
     if not(params[5]):
         plt.show()
     else:
-        #plt.savefig(fs.myPath + "spectrum_plots_with_maxima/" + filename[:len(filename)-4] + ".png")
+        plt.savefig(fs.myPath + "spectrum_plots_with_maxima/" + filename[:len(filename)-4] + ".png")
         params[5] = True
     plt.close()
     return peakFreqs, peakAmps
