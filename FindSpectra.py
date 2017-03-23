@@ -32,7 +32,7 @@ def findSpectra():
             g.guiInit(params)
             if params[5]:
                 params[5] = False
-                fs.saveSpectra(peakFreqs, peakAmps, "partials/peak_freqs_" + wavFiles[i][:len(wavFiles[i]) - 4], "partials/peak_amps_" + wavFiles[i][:len(wavFiles[i]) - 4])
+                fs.saveSpectra(peakFreqs, peakAmps, "partials/peak_freqs_" + wavFiles[i][:len(wavFiles[i]) -4], "partials/peak_amps_" + wavFiles[i][:len(wavFiles[i]) - 4])
                 break
 
 
@@ -49,9 +49,9 @@ def plotMaxima(freqs, amps, filename, params):
     plt.ylabel("Amplitude")
     plt.plot(freqs, amps)
     maxima = dp.detect_peaks(amps, mph=params[1], mpd=params[2], show=False, valley=False, cutoff=params[0], low=params[3], high=params[4])
-    #maxima2 = fixPeaks(amps, maxima)
-    print("unadjusted maxima frequencies: ",end="")
-    print(maxima)
+    # maxima2 = fixPeaks(amps, maxima)
+    # print("unadjusted maxima frequencies: ",end="")
+    # print(maxima)
     peakAmps = []
     peakFreqs = []
     for x in maxima:
@@ -84,142 +84,28 @@ def fixPeaks(amps, result):
     return keep
 
 
+def fixSpectraMaximaPlots():
+    wavFiles = fs.getWavFiles()
 
-# takes a list of amplitudes a and list of frequencies f
-# attempts to find the peaks and corresponding amplitudes in the list of data
-def findPeaks(freqs, amps, cutoff, ignore):
-    width = 5000 # the number of array bins to use for one search
-    maxZeros = 10 # once this many zeroes are seen in the array, we must be over the peak
-    temp = list(amps)
-    peakFreqs = []
-    peakAmps = []
+    for i in range(len(wavFiles)):
+        freqs, amps = fs.getAmpsAndFreqs(wavFiles[i])
+        peakFreqs, peakAmps = fs.getPartials(wavFiles[i][:-4])
 
-    for i in range(len(temp)):
-        if temp[i] < cutoff:
-            temp[i] = 0
+        # Get current size
+        fig_size = plt.rcParams["figure.figsize"]
+        # Set figure width to 12 and height to 9
+        fig_size[0] = 22
+        fig_size[1] = 15
+        plt.rcParams["figure.figsize"] = fig_size
 
-    nextStart = 0
-    for i in range(int(len(temp)/width)):
-        start = None
-        end = None
-        zeroCount = 0
-        for j in range(width):
-            curr = j + i*width
-            if curr < nextStart:
-                continue
-            if temp[curr] > 0:
-                zeroCount = 0
-                if start is None:
-                    start = curr
-            elif temp[curr] == 0 and start is not None:
-                if zeroCount >= maxZeros:
-                    end = curr
-                    break
-                else:
-                    zeroCount += 1
-        if start is not None and end is not None:
-            peakWidth = freqs[end]-freqs[start]
-            print("width of peak: " + str(peakWidth))
-            if freqs[start] > ignore:
-                guy = amps[start:end]
-                guy2 = freqs[start:end]
-                maxAmp = max(amps[start:end])
-                maxFreqInd = amps[start:end].index(maxAmp)+start
-                maxFreq = freqs[maxFreqInd]
-                peakFreqs.append(maxFreq)
-                peakAmps.append(maxAmp)
-            nextStart = end
+        plt.title("Spectrum for: " + wavFiles[i])
+        plt.xlabel("Frequency[HZ]")
+        plt.ylabel("Amplitude")
+        plt.plot(freqs, amps)
 
-    return peakFreqs, peakAmps
+        for j in range(len(peakFreqs)):
+            plt.axvline(x=peakFreqs[j], color='r')
+            plt.text(peakFreqs[j] - 80, .8, 'f = ' + str(peakFreqs[j]), rotation=90)
 
-
-def findPeaksAlternate(freqs, amps, cutoff, ignore):
-    maxZeros = 50 # once this many zeroes are seen in the array, we must be over the peak
-    temp = list(amps)
-    peakFreqs = []
-    peakAmps = []
-
-    for i in range(len(temp)):
-        if temp[i] < cutoff:
-            temp[i] = 0
-
-    zeroCount = 0
-    end = None
-    start = None
-
-    for j in range(len(freqs)):
-        # global zeroCount
-        # global start
-        # global end
-        if temp[j] > 0:
-            zeroCount = 0
-            if start is None:
-                start = j
-        elif temp[j] == 0 and start is not None:
-            if zeroCount >= maxZeros:
-                end = j-zeroCount
-                peakWidth = freqs[end] - freqs[start]
-                print("width of peak: " + str(peakWidth))
-                if freqs[start] > ignore:
-                    guy = amps[start:end]
-                    guy2 = freqs[start:end]
-
-                    # myFile2 = open("C:/Users/Brendan/Desktop/440amps.csv", 'w')
-                    # for x in guy:
-                    #     myFile2.write(str(x) + ',\n')
-                    # myFile2.close()
-                    #
-                    # myFile2 = open("C:/Users/Brendan/Desktop/440freqs.csv", 'w')
-                    # for x in guy2:
-                    #     myFile2.write(str(x) + ',\n')
-                    # myFile2.close()
-                    #
-                    # break
-
-                    maxAmp = max(amps[start:end])
-                    maxFreqInd = amps[start:end].index(maxAmp) + start
-                    maxFreq = freqs[maxFreqInd]
-                    peakFreqs.append(maxFreq)
-                    peakAmps.append(maxAmp)
-                end = None
-                start = None
-            else:
-                zeroCount += 1
-
-    return peakFreqs, peakAmps
-
-
-def findOneSpectrum(fileName):
-    freqs, amps = fs.getAmpsAndFreqs(fileName)
-    fs.saveData(freqs, amps, fileName)
-
-    cutoff = .1
-    ignore = 3000
-
-    # make spectrum plot
-    peakFreqs, peakAmps = plotMaxima(freqs, amps, fileName, cutoff, ignore, False)
-
-    ans = input("Change cutoff? (y/n)")
-
-    while True:
-        while ans != 'y' and ans != 'n':
-            ans = input("Try again, Change cutoff? (y/n)")
-        if ans == 'y':
-            cutoff = float(input("new cutoff: "))
-            ans2 = input("change ignore? (y,n)")
-            if ans2 == 'y':
-                ignore = float(input("new ignore: "))
-            peakFreqs, peakAmps = plotMaxima(freqs, amps, fileName, cutoff, ignore, False)
-            ans = input("Change cutoff? (y/n)")
-        elif ans == 'n':
-            ans2 = input("change ignore? (y,n)")
-            if ans2 == 'y':
-                ignore = float(input("new ignore: "))
-                peakFreqs, peakAmps = plotMaxima(freqs, amps, fileName, cutoff, ignore, False)
-                ans = input("Change cutoff? (y/n)")
-                continue
-            peakFreqs, peakAmps = plotMaxima(freqs, amps, fileName, cutoff, ignore, True)
-            break
-
-    return peakFreqs, peakAmps
-
+        plt.savefig(fs.myPath + "spectrum_plots_with_maxima2/" + wavFiles[i][:-4] + ".png")
+        plt.close()

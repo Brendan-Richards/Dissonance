@@ -3,7 +3,7 @@ from scipy.io import wavfile as wav
 import math
 from scipy.fftpack import fft, fftfreq
 
-myPath = "C:/Users/Brend/Dropbox/github/Dissonance/"
+myPath = "C:/Users/Brendan/Dropbox/github/Dissonance/"
 
 def saveData(freqs, amps, filename):
     myFile1 = open(myPath + "spectrum_plot_data/" + filename[:len(filename)-4] + "_freqs.csv", 'w')
@@ -92,3 +92,18 @@ def getDissonanceVals(fileName):
         temp.append(float(x[:-3]))
     myFile1.close()
     return temp
+
+def getPartials(filename):
+    freqs = []
+    amps = []
+    myFile1 = open(myPath + 'partials/' + 'peak_freqs_' + filename + ".csv", 'r')
+    for x in myFile1:
+        freqs.append(float(x[:-3]))
+    myFile1.close()
+
+    myFile2 = open(myPath + 'partials/' + 'peak_amps_' + filename + ".csv", 'r')
+    for x in myFile2:
+        amps.append(float(x[:-3]))
+    myFile1.close()
+
+    return freqs, amps

@@ -2,78 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8313e11-bd27-424d-8872-74a548f331d0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/440 tone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Accordion_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Alto Sax_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Banjo_01-03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Bassoon_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Clarinet_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Flute_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/French Horn_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Harpsichord_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Mandolin_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Nylon Guitar_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Oboe_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Piano Mono_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Soprano Sax_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Steel String Guitar_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Tenor Sax_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Trombone_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Trumpet Cup Mute_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Trumpet_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Vibes_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/Violin_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/cello_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dissonance_curves/harp_01.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makeSynths.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/440 tone.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/440 tone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Accordion_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Accordion_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Alto Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Alto Sax_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Banjo_01-03.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Banjo_01-03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Bassoon_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Bassoon_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Clarinet_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Clarinet_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Flute_02.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Flute_02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/French Horn_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/French Horn_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Harpsichord_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Harpsichord_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Mandolin_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Mandolin_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Nylon Guitar_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Nylon Guitar_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Oboe_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Oboe_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Piano Mono_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Piano Mono_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Soprano Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Soprano Sax_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Steel String Guitar_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Steel String Guitar_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Tenor Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Tenor Sax_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trombone_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trombone_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet Cup Mute_02.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet Cup Mute_02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Vibes_02.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Vibes_02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Violin_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Violin_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/cello_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/cello_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/harp_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/harp_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dissonance.iml" afterPath="$PROJECT_DIR$/.idea/dissonance.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileStuff.py" afterPath="$PROJECT_DIR$/FileStuff.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDissonanceCurves.py" afterPath="$PROJECT_DIR$/FindDissonanceCurves.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindSpectra.py" afterPath="$PROJECT_DIR$/FindSpectra.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathematica_files/data_smoothing.nb" afterPath="$PROJECT_DIR$/mathematica_files/data_smoothing.nb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathematica_files/freq_spec_values.nb" afterPath="$PROJECT_DIR$/mathematica_files/freq_spec_values.nb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Accordion_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Accordion_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Alto Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Alto Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Banjo_01-03.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Banjo_01-03.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Bassoon_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Bassoon_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Clarinet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Clarinet_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Flute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Flute_02.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_French Horn_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_French Horn_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Harpsichord_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Harpsichord_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Mandolin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Mandolin_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Nylon Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Nylon Guitar_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Oboe_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Oboe_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Piano Mono_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Piano Mono_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Soprano Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Soprano Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Steel String Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Steel String Guitar_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Tenor Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Tenor Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Trombone_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Trombone_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Trumpet Cup Mute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Trumpet Cup Mute_02.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Trumpet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Trumpet_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_Violin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_Violin_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_cello_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_cello_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_amps_harp_01.csv" afterPath="$PROJECT_DIR$/partials/peak_amps_harp_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Accordion_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Accordion_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Alto Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Alto Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Banjo_01-03.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Banjo_01-03.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Bassoon_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Bassoon_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Clarinet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Clarinet_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Flute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Flute_02.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_French Horn_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_French Horn_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Harpsichord_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Harpsichord_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Mandolin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Mandolin_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Nylon Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Nylon Guitar_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Oboe_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Oboe_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Piano Mono_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Piano Mono_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Soprano Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Soprano Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Steel String Guitar_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Steel String Guitar_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Tenor Sax_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Tenor Sax_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Trombone_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Trombone_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Trumpet Cup Mute_02.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Trumpet Cup Mute_02.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Trumpet_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Trumpet_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_Violin_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_Violin_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_cello_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_cello_01.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/peak_freqs_harp_01.csv" afterPath="$PROJECT_DIR$/partials/peak_freqs_harp_01.csv" />
     </list>
     <ignored path="dissonance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -105,12 +63,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindSpectra.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="makeSynths.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/makeSynths.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindSpectra.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FindSpectra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="544">
+              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,8 +90,8 @@
       <file leaf-file-name="GUI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="935">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,9 +100,11 @@
       <file leaf-file-name="FindDissonanceCurves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="-1156">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +112,8 @@
       <file leaf-file-name="FileStuff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileStuff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+            <state relative-caret-position="1377">
+              <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -150,7 +124,7 @@
       <file leaf-file-name="detect_peaks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/detect_peaks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="302">
               <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding />
             </state>
@@ -178,18 +152,19 @@
         <option value="$PROJECT_DIR$/Dissonance.py" />
         <option value="$PROJECT_DIR$/detect_peaks.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
-        <option value="$PROJECT_DIR$/FileStuff.py" />
         <option value="$PROJECT_DIR$/FindDissonanceCurves.py" />
+        <option value="$PROJECT_DIR$/makeSynths.py" />
+        <option value="$PROJECT_DIR$/FileStuff.py" />
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/FindSpectra.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -216,8 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,6 +211,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,23 +235,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="dissonance" />
       <option name="SCRIPT_NAME" value="C:\Users\Brendan\Dropbox\Python projects\dissonance\FindSpectra.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FileStuff" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dissonance" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileStuff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -328,6 +286,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="dissonance" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="makeSynths" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dissonance" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/makeSynths.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -468,18 +443,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.FileStuff" />
-      <item index="2" class="java.lang.String" itemvalue="Python.FindSpectra" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Main (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.GUI" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FindSpectra" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Main (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.GUI" />
+      <item index="4" class="java.lang.String" itemvalue="Python.makeSynths" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.FindSpectra" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="3" class="java.lang.String" itemvalue="Python.GUI" />
-        <item index="4" class="java.lang.String" itemvalue="Python.FileStuff" />
+        <item index="1" class="java.lang.String" itemvalue="Python.makeSynths" />
+        <item index="2" class="java.lang.String" itemvalue="Python.FindSpectra" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GUI" />
       </list>
     </recent_temporary>
   </component>
@@ -545,19 +520,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24762908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27222833" sideWeight="0.084375" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16558442" sideWeight="0.49367756" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27222833" sideWeight="0.915625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27056277" sideWeight="0.10642782" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16558442" sideWeight="0.49367756" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27056277" sideWeight="0.89357215" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44839066" sideWeight="0.723093" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44805196" sideWeight="0.91570073" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -566,25 +541,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24287222" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2407603" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49630412" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -629,31 +585,30 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FileStuff.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="65" />
+          <url>file://$PROJECT_DIR$/makeSynths.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="72" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FindSpectra.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="43" column="6" selection-start-line="42" selection-start-column="0" selection-end-line="47" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,7 +616,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -690,7 +647,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -730,7 +689,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,7 +700,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,7 +730,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -776,7 +741,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,54 +803,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI.py">
+    <entry file="file://$PROJECT_DIR$/makeSynths.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileStuff.py">
+    <entry file="file://$PROJECT_DIR$/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="935">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/detect_peaks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="302">
           <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FindSpectra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="-1156">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileStuff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FindSpectra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>

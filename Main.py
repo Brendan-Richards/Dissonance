@@ -3,24 +3,12 @@ import FindDissonanceCurves as FDC
 import FileStuff as fs
 import matplotlib.pyplot as plt
 import detect_peaks as dp
-import os
 
-xyz = fSpec.findSpectra()
 
-abc = FDC.findCurves()
-
-# def plotPairs():
-#     vals1 = fs.getDissonanceVals('Alto Sax_01')
-#     vals2 = fs.getDissonanceVals('Piano Mono_01')
-#
-#     plt.plot(vals1, vals2)
-#     plt.xlabel("Alto Sax Dissonance")
-#     plt.ylabel("Accordion Dissonance")
-#     plt.show()
-#
-# plotPairs()
-
-sdfs = FDC.test()
+dfg = fSpec.fixSpectraMaximaPlots()
+# xyz = fSpec.findSpectra()
+# abc = FDC.findCurves()
+# sdfs = FDC.test()
 
 
 
