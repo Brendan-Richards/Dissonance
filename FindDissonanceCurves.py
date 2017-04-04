@@ -134,6 +134,63 @@ def findCurves():
             # plt.show()
             plt.close()
 
+def makeMultiPlots():
+    wavFiles = fs.getWavFiles()
+
+    for i in range(1,len(wavFiles)):
+        for j in range(1, len(wavFiles)):
+            amps1 = []
+            freqs1 = []
+            amps2 = []
+            freqs2 = []
+            print("making dissonance curve for: " + wavFiles[i] + " and " + wavFiles[j])
+
+            name = fs.myPath + "partials/peak_freqs_" + wavFiles[i][:-4] + ".csv"
+            file = open(name, 'r')
+            reader = csv.reader(file)
+            for row in reader:
+                freqs1.append(float(row[0]))
+
+            name = fs.myPath + "partials/peak_amps_" + wavFiles[i][:-4] + ".csv"
+            file = open(name, 'r')
+            reader = csv.reader(file)
+            for row in reader:
+                amps1.append(float(row[0]))
+
+            name = fs.myPath + "partials/peak_freqs_" + wavFiles[j][:-4] + ".csv"
+            file = open(name, 'r')
+            reader = csv.reader(file)
+            for row in reader:
+                freqs2.append(float(row[0]))
+
+            name = fs.myPath + "partials/peak_amps_" + wavFiles[j][:-4] + ".csv"
+            file = open(name, 'r')
+            reader = csv.reader(file)
+            for row in reader:
+                amps2.append(float(row[0]))
+
+            xVals, yVals = getDissonanceCurve(freqs1, amps1, freqs2, amps2)
+
+            # fs.saveDissonanceVals(yVals, wavFiles[i][:-4])
+
+            yVals = fs.normalize(yVals)
+
+            plt.plot(xVals, yVals)
+
+        plt.title("Dissonance Curve for: " + wavFiles[i] + " vs all other instruments")
+        plt.xlabel("Frequency Ratio")
+        plt.ylabel("Dissonance")
+
+        # Get current size
+        fig_size = plt.rcParams["figure.figsize"]
+        # Set figure width to 22 and height to 15
+        fig_size[0] = 22
+        fig_size[1] = 15
+        plt.rcParams["figure.figsize"] = fig_size
+
+        plt.savefig(fs.myPath + "multiplot_dissonance_curves/" + wavFiles[i][:-4] + ".png")
+        # plt.show()
+        plt.close()
 
 def findOneCurve(fileName1, fileName2):
     amps1 = []

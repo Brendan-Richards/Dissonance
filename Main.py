@@ -8,7 +8,8 @@ import makeSynths as ms
 
 # dfg = fSpec.fixSpectraMaximaPlots()
 # xyz = fSpec.findSpectra()
-abc = FDC.findCurves()
+# abc = FDC.findCurves()
+yjt = FDC.makeMultiPlots()
 # sdfs = FDC.test()
 
 # umu = ms.makeAllSynths()
