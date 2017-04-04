@@ -3,12 +3,17 @@ import FindDissonanceCurves as FDC
 import FileStuff as fs
 import matplotlib.pyplot as plt
 import detect_peaks as dp
+import makeSynths as ms
 
 
-dfg = fSpec.fixSpectraMaximaPlots()
+# dfg = fSpec.fixSpectraMaximaPlots()
 # xyz = fSpec.findSpectra()
-# abc = FDC.findCurves()
+abc = FDC.findCurves()
 # sdfs = FDC.test()
+
+# umu = ms.makeAllSynths()
+
+# rherg = FDC.findOneCurve("Accordion_01.wav", 'Alto Sax_01.wav')
 
 
 

@@ -2,6 +2,7 @@ import math
 import FileStuff as fs
 import csv
 import matplotlib.pyplot as plt
+import os
 
 # each Timbre object has a list of frequencies and a corresponding list of amplitudes
 class Timbre:
@@ -112,6 +113,8 @@ def findCurves():
 
             # fs.saveDissonanceVals(yVals, wavFiles[i][:-4])
 
+            yVals = fs.normalize(yVals)
+
             plt.plot(xVals, yVals)
             plt.title("Dissonance Curve for: " + wavFiles[i] + " and " + wavFiles[j])
             plt.xlabel("Frequency Ratio")
@@ -124,21 +127,60 @@ def findCurves():
             fig_size[1] = 15
             plt.rcParams["figure.figsize"] = fig_size
 
-            plt.savefig(fs.myPath + "dissonance_curves/" + wavFiles[i][:-4] + "/" + wavFiles[j][:-4] + ".png")
+            if not os.path.exists(fs.myPath + "dissonance_curves_normalized/" + wavFiles[i][:-4]):
+                os.makedirs(fs.myPath + "dissonance_curves_normalized/" + wavFiles[i][:-4])
+
+            plt.savefig(fs.myPath + "dissonance_curves_normalized/" + wavFiles[i][:-4] + "/" + wavFiles[j][:-4] + ".png")
             # plt.show()
             plt.close()
 
 
-def findOneCurve(freqs, amps, fileName):
-    freqs, amps = getDissonanceCurve(freqs, amps)
+def findOneCurve(fileName1, fileName2):
+    amps1 = []
+    freqs1 = []
+    amps2 = []
+    freqs2 = []
+    print("making dissonance curve for: " + fileName1 + " and " + fileName2)
 
-    plt.plot(freqs, amps)
-    plt.title("Dissonance Curve for: " + fileName)
+    name = fs.myPath + "partials/peak_freqs_" + fileName1[:-4] + ".csv"
+    file = open(name, 'r')
+    reader = csv.reader(file)
+    for row in reader:
+        freqs1.append(float(row[0]))
+
+    name = fs.myPath + "partials/peak_amps_" + fileName1[:-4] + ".csv"
+    file = open(name, 'r')
+    reader = csv.reader(file)
+    for row in reader:
+        amps1.append(float(row[0]))
+
+    name = fs.myPath + "partials/peak_freqs_" + fileName2[:-4] + ".csv"
+    file = open(name, 'r')
+    reader = csv.reader(file)
+    for row in reader:
+        freqs2.append(float(row[0]))
+
+    name = fs.myPath + "partials/peak_amps_" + fileName2[:-4] + ".csv"
+    file = open(name, 'r')
+    reader = csv.reader(file)
+    for row in reader:
+        amps2.append(float(row[0]))
+
+    xVals, yVals = getDissonanceCurve(freqs1, amps1, freqs2, amps2)
+
+    plt.plot(xVals, yVals)
+    plt.title("Dissonance Curve for: " + fileName1 + " and " + fileName2)
     plt.xlabel("Frequency Ratio")
     plt.ylabel("Dissonance")
-    # plt.savefig(fs.myPath + "all_dissonance_curves/" + fileName + ".png")
+
     plt.show()
-    plt.close()
+
+# Get current size
+fig_size = plt.rcParams["figure.figsize"]
+# Set figure width to 22 and height to 15
+fig_size[0] = 22
+fig_size[1] = 15
+plt.rcParams["figure.figsize"] = fig_size
 
 
 def test():

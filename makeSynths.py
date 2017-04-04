@@ -1,73 +1,56 @@
+# create a synthetic 'sine wave' wave file with
+# set frequency and length
+# tested with Python 2.5.4 and Python 3.1.1 by vegaseat
+# code taken from: https://www.daniweb.com/programming/software-development/code/263775/create-a-synthetic-sine-wave-wave-file
+import math
+import wave
+import struct
+import FileStuff as fs
 
-import numpy as np
-import pyaudio
-import time
-import os
-
-myPath = "C:/Users/Brendan/Dropbox/github/Dissonance/"
-
-def makeSynths():
-
-    wavFiles = getWavFiles()
-
-    for i in range(1,len(wavFiles)):
-        partialFreqs, partialAmps = getPartials(wavFiles[i])
-
-        audio = synthesize( partialFreqs, partialAmps)
-
-        saveSynth(audio)
-
-# return a list of all the filenames in the given folder
-def getWavFiles():
-    return os.listdir(myPath + "Instrument_samples/")  # get a list of all the filenames of the audio files
-
-def synthesize(freqs, amps):
-
-
-    for i in range(len(freqs)):
-        p = pyaudio.PyAudio()
-        volume = amps[i]  # range [0.0, 1.0]
-        sr = 44100  # sampling rate, Hz, must be integer
-        duration = 5.0  # in seconds, may be float
-        f = freqs[i]  # sine frequency, Hz, may be float
-
-        # generate samples, note conversion to float32 array
-        samples = (np.sin(2 * np.pi * np.arange(sr * duration) * f / sr)).astype(np.float32)
-
-        # for paFloat32 sample values must be in range [-1.0, 1.0]
-        stream = p.open(format=pyaudio.paFloat32,
-                        channels=1,
-                        rate=sr,
-                        output=True)
-
-        # play. May repeat with different volume values (if done interactively)
-        stream.write(volume * samples)
-        stream.read(len(samples))
-
-        stream.stop_stream()
-        stream.close()
-
-        p.terminate()
-
-        time.sleep(3)
+def make_soundfile(freqs, amps, data_size=10000, fname="test.wav"):
+    """
+    create a synthetic 'sine wave' wave file with frequency freq
+    file fname has a length of about data_size * 2
+    """
+    frate = 44000.0  # framerate as a float
+    amp = 8000.0     # multiplier for amplitude
+    # make a sine list ...
+    sine_list = []
+    for x in range(data_size):
+        val = 0.0
+        for i in range(len(freqs)):
+            val += amps[i]*math.sin(2*math.pi*freqs[i]*(x/frate))
+        sine_list.append(val)
+    # get ready for the wave file to be saved ...
+    wav_file = wave.open(fs.myPath + "synth_recreations/" + fname + ".wav", "w")
+    # give required parameters
+    nchannels = 1
+    sampwidth = 2
+    framerate = int(frate)
+    nframes = data_size
+    comptype = "NONE"
+    compname = "not compressed"
+    # set all the parameters at once
+    wav_file.setparams((nchannels, sampwidth, framerate, nframes,
+        comptype, compname))
+    # now write out the file ...
+    print( "may take a moment ..." )
+    for s in sine_list:
+        # write the audio frames to file
+        wav_file.writeframes(struct.pack('h', int(s*amp/2)))
+    wav_file.close()
+    print( "%s written" % fname )
 
 
-def saveSynth(audio):
-    None
 
-def getPartials(filename):
-    freqs = []
-    amps = []
-    myFile1 = open(myPath + "partials/peak_freqs_" + filename[:len(filename)-4] + ".csv", 'r')
-    for x in myFile1:
-        freqs.append(float(x[:-3]))
-    myFile1.close()
+def makeAllSynths():
+    wavFiles = fs.getWavFiles()
+    for i in range(len(wavFiles)):
+        freqs, amps = fs.getPartials(wavFiles[i][:-4])
+        make_soundfile(freqs, amps, 90000, wavFiles[i][:-4])
 
-    myFile2 = open(myPath + "partials/peak_amps_" + filename[:len(filename)-4] + ".csv", 'r')
-    for x in myFile2:
-        amps.append(float(x[:-3]))
-    myFile2.close()
-
-    return freqs, amps
-
-makeSynths()
+# flist = [440, 880, 1320, 1760, 2200, 2640]
+# amplist = [1, .21666, .119116, .096164, .085033, .076539]
+#
+#
+# make_soundfile(flist, amplist, 90000, "WaveTest2.wav")

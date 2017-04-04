@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8313e11-bd27-424d-8872-74a548f331d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makeSynths.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/440 tone.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/440 tone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Accordion_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Accordion_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Alto Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Alto Sax_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Banjo_01-03.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Banjo_01-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Bassoon_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Bassoon_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Clarinet_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Clarinet_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Flute_02.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Flute_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/French Horn_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/French Horn_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Harpsichord_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Harpsichord_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Mandolin_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Mandolin_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Nylon Guitar_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Nylon Guitar_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Oboe_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Oboe_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Piano Mono_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Piano Mono_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Soprano Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Soprano Sax_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Steel String Guitar_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Steel String Guitar_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Tenor Sax_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Tenor Sax_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trombone_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trombone_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet Cup Mute_02.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet Cup Mute_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Trumpet_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Vibes_02.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Vibes_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/Violin_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/Violin_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/cello_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/cello_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spectrum_plots_with_maxima/harp_01.png" afterPath="$PROJECT_DIR$/spectrum_plots_with_maxima/harp_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dissonance.iml" afterPath="$PROJECT_DIR$/.idea/dissonance.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileStuff.py" afterPath="$PROJECT_DIR$/FileStuff.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindSpectra.py" afterPath="$PROJECT_DIR$/FindSpectra.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDissonanceCurves.py" afterPath="$PROJECT_DIR$/FindDissonanceCurves.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makeSynths.py" afterPath="$PROJECT_DIR$/makeSynths.py" />
     </list>
     <ignored path="dissonance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,14 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,20 +38,20 @@
       <file leaf-file-name="makeSynths.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makeSynths.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="207">
+              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
               <folding>
-                <element signature="e#1#19#0" expanded="true" />
+                <element signature="e#258#269#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindSpectra.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FindSpectra.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindSpectra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+            <state relative-caret-position="1276">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -90,7 +62,7 @@
       <file leaf-file-name="GUI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
+            <state relative-caret-position="613">
               <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
@@ -100,8 +72,8 @@
       <file leaf-file-name="FindDissonanceCurves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1156">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="426">
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -112,8 +84,8 @@
       <file leaf-file-name="FileStuff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileStuff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+            <state relative-caret-position="-849">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -124,7 +96,7 @@
       <file leaf-file-name="detect_peaks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/detect_peaks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="986">
               <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding />
             </state>
@@ -152,11 +124,11 @@
         <option value="$PROJECT_DIR$/Dissonance.py" />
         <option value="$PROJECT_DIR$/detect_peaks.py" />
         <option value="$PROJECT_DIR$/GUI.py" />
-        <option value="$PROJECT_DIR$/FindDissonanceCurves.py" />
+        <option value="$PROJECT_DIR$/FindSpectra.py" />
         <option value="$PROJECT_DIR$/makeSynths.py" />
         <option value="$PROJECT_DIR$/FileStuff.py" />
+        <option value="$PROJECT_DIR$/FindDissonanceCurves.py" />
         <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/FindSpectra.py" />
       </list>
     </option>
   </component>
@@ -211,8 +183,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489291315376</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed the spec plots with maxima">
+      <created>1490302392217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490302392217</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -523,12 +502,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24762908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24710222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27056277" sideWeight="0.10642782" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16558442" sideWeight="0.49367756" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558442" sideWeight="0.50842994" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558442" sideWeight="0.4915701" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49789253" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27056277" sideWeight="0.89357215" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26948053" sideWeight="0.88303477" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -574,7 +553,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new peak detect algorithm" />
     <MESSAGE value="implemented new peak detection algorithm, and made gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented new peak detection algorithm, and made gui" />
+    <MESSAGE value="fixed the spec plots with maxima" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the spec plots with maxima" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -583,11 +563,6 @@
           <url>file://$PROJECT_DIR$/../untitled/kughkj.py</url>
           <line>1</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/makeSynths.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -637,9 +612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -668,9 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -679,9 +650,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -720,9 +689,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,25 +772,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/makeSynths.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        <state relative-caret-position="207">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#258#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FindSpectra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
+        <state relative-caret-position="613">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FileStuff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-849">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/detect_peaks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="986">
           <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
           <folding />
         </state>
@@ -831,41 +818,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FindDissonanceCurves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1156">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="426">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileStuff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FindSpectra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
