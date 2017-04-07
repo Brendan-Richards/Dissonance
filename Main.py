@@ -9,13 +9,12 @@ import makeSynths as ms
 # dfg = fSpec.fixSpectraMaximaPlots()
 # xyz = fSpec.findSpectra()
 # abc = FDC.findCurves()
-yjt = FDC.makeMultiPlots()
+# yjt = FDC.makeMultiPlots()
 # sdfs = FDC.test()
-
 # umu = ms.makeAllSynths()
-
 # rherg = FDC.findOneCurve("Accordion_01.wav", 'Alto Sax_01.wav')
-
+# erg = fs.combineSounds(fs.getWavFiles())
+tn = fSpec.findDoubleSpectra()
 
 
 

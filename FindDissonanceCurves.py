@@ -188,8 +188,8 @@ def makeMultiPlots():
         fig_size[1] = 15
         plt.rcParams["figure.figsize"] = fig_size
 
-        plt.savefig(fs.myPath + "multiplot_dissonance_curves/" + wavFiles[i][:-4] + ".png")
-        # plt.show()
+        # plt.savefig(fs.myPath + "multiplot_dissonance_curves/" + wavFiles[i][:-4] + ".png")
+        plt.show()
         plt.close()
 
 def findOneCurve(fileName1, fileName2):
@@ -265,4 +265,3 @@ def test():
 
     plt.show()
     plt.close()
-

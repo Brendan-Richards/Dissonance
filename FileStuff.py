@@ -2,8 +2,9 @@ import os
 from scipy.io import wavfile as wav
 import math
 from scipy.fftpack import fft, fftfreq
+from pydub import AudioSegment
 
-myPath = "C:/Users/Brendan/Dropbox/github/Dissonance/"
+myPath = "C:/Users/Brend/Dropbox/github/Dissonance/"
 
 def saveData(freqs, amps, filename):
     myFile1 = open(myPath + "spectrum_plot_data/" + filename[:len(filename)-4] + "_freqs.csv", 'w')
@@ -34,6 +35,11 @@ def getAmpsAndFreqs(file):
     freqs, amps = doFFT(file)
     return freqs, amps
 
+def getDoubleAmpsAndFreqs(file):
+    print("doing FFT for: " + file)
+    freqs, amps = doDoubleFFT(file)
+    return freqs, amps
+
 # opens the audio file given by fn
 # and does the fft on it
 # returns the list of amplitudes and frequencies for that file
@@ -41,6 +47,19 @@ def doFFT(file):
 
     # the audio file is expected to be mono
     sr, data = wav.read(myPath + "Instrument_samples/" + file)
+    powOf2(data)
+    L = len(data) / 2  # you only need half of the fft list (it mirrors to the right)
+    p = abs(fft(data)[:(L - 1)])  # get the list of power values
+    a = [math.sqrt(x) for x in p]  # get amplitudes from power spectrum
+    a = normalize(a)  # normalize the amplitudes
+    f = list(fftfreq(data.size, 1 / sr)[:(L - 1)])  # get the list of frequencies
+
+    return f, a
+
+def doDoubleFFT(file):
+
+    # the audio file is expected to be mono
+    sr, data = wav.read(myPath + "combined_sounds/" + file)
     powOf2(data)
     L = len(data) / 2  # you only need half of the fft list (it mirrors to the right)
     p = abs(fft(data)[:(L - 1)])  # get the list of power values
@@ -68,6 +87,10 @@ def powOf2(data):
 # return a list of all the filenames in the given folder
 def getWavFiles():
     return os.listdir(myPath + "Instrument_samples/")  # get a list of all the filenames of the audio files
+
+def getDoubleWavFiles():
+    return os.listdir(myPath + "combined_sounds/")  # get a list of all the filenames of the combined audio files
+
 
 def getSmoothed(fileName):
     temp = []
@@ -107,3 +130,17 @@ def getPartials(filename):
     myFile1.close()
 
     return freqs, amps
+
+
+def combineSounds(files):
+    for i in range(1,len(files)):
+        for j in range(1,len(files)):
+            if os.path.exists(myPath + "combined_sounds/" + files[i][:-4] + " and " + files[j]) or os.path.exists(myPath + "combined_sounds/" + files[j][:-4] + " and " + files[i]) or files[i] == files[j]:
+                continue
+
+            sound1 = AudioSegment.from_file(myPath + "/instrument_samples/" + files[i])
+            sound2 = AudioSegment.from_file(myPath + "/instrument_samples/" + files[j])
+
+            combined = sound1.overlay(sound2)
+
+            combined.export(myPath + "combined_sounds/" + files[i][:-4] + " and " + files[j], format='wav')

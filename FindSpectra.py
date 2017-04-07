@@ -109,3 +109,31 @@ def fixSpectraMaximaPlots():
 
         plt.savefig(fs.myPath + "spectrum_plots_with_maxima2/" + wavFiles[i][:-4] + ".png")
         plt.close()
+
+
+def findDoubleSpectra():
+
+    wavFiles = fs.getDoubleWavFiles()
+    print(len(wavFiles))
+    for i in range(len(wavFiles)):
+        freqs, amps = fs.getDoubleAmpsAndFreqs(wavFiles[i])
+        # peakFreqs, peakAmps = fs.getDoublePartials(wavFiles[i][:-4])
+
+        # Get current size
+        fig_size = plt.rcParams["figure.figsize"]
+        # Set figure width to 12 and height to 9
+        fig_size[0] = 22
+        fig_size[1] = 15
+        plt.rcParams["figure.figsize"] = fig_size
+
+        plt.title("Spectrum for: " + wavFiles[i])
+        plt.xlabel("Frequency[HZ]")
+        plt.ylabel("Amplitude")
+        plt.plot(freqs, amps)
+
+        # for j in range(len(peakFreqs)):
+        #     plt.axvline(x=peakFreqs[j], color='r')
+        #     plt.text(peakFreqs[j] - 80, .8, 'f = ' + str(peakFreqs[j]), rotation=90)
+
+        plt.savefig(fs.myPath + "double_spectrum_plots/" + wavFiles[i][:-4] + ".png")
+        plt.close()
